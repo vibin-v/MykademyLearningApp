@@ -11,26 +11,26 @@
       <![CDATA[LOG:INFO: Running After class - Closing up browser ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-12-03T12:13:47 IST" name="Default suite" finished-at="2023-12-03T12:14:02 IST" duration-ms="15376">
+  <suite started-at="2023-12-03T14:05:37 IST" name="Default suite" finished-at="2023-12-03T14:06:10 IST" duration-ms="32906">
     <groups>
     </groups>
-    <test started-at="2023-12-03T12:13:47 IST" name="Default test" finished-at="2023-12-03T12:14:02 IST" duration-ms="15376">
+    <test started-at="2023-12-03T14:05:37 IST" name="Default test" finished-at="2023-12-03T14:06:10 IST" duration-ms="32906">
       <class name="mykademy.testCases.M001_LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:mykademy.testCases.M001_LoginTest@25ce9dc4]" started-at="2023-12-03T12:13:47 IST" name="setUp" finished-at="2023-12-03T12:13:53 IST" duration-ms="6569" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:mykademy.testCases.M001_LoginTest@74ea2410]" started-at="2023-12-03T14:05:37 IST" name="setUp" finished-at="2023-12-03T14:05:44 IST" duration-ms="6826" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[LOG:INFO: Running Before class - Setting up browser ]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:mykademy.testCases.M001_LoginTest@25ce9dc4]" started-at="2023-12-03T12:13:53 IST" name="loginTest" finished-at="2023-12-03T12:14:02 IST" duration-ms="8579" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:mykademy.testCases.M001_LoginTest@74ea2410]" started-at="2023-12-03T14:05:44 IST" name="loginTest" finished-at="2023-12-03T14:06:10 IST" duration-ms="25710" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[LOG:INFO : Starting test execution!!]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:mykademy.testCases.M001_LoginTest@25ce9dc4]" started-at="2023-12-03T12:14:02 IST" name="tearDown" finished-at="2023-12-03T12:14:02 IST" duration-ms="194" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mykademy.testCases.M001_LoginTest@74ea2410]" started-at="2023-12-03T14:06:10 IST" name="tearDown" finished-at="2023-12-03T14:06:10 IST" duration-ms="316" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[LOG:INFO: Running After class - Closing up browser ]]>

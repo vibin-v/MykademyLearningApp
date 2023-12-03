@@ -15,10 +15,14 @@ public class LoginPage
 	private By pass = By.name("password");
 	private By logIn = By.xpath("//button[text()='Login ']");
 	
-	public void loginToApp(String cred_username,String cred_pass)
+	public AdminDashbaordPage loginToApp(String cred_username,String cred_pass)
 	{
 		driver.findElement(userName).sendKeys(cred_username);
 		driver.findElement(pass).sendKeys(cred_pass);
 		driver.findElement(logIn).click();
+		
+		AdminDashbaordPage admPage = new AdminDashbaordPage(driver);
+		return admPage;
+		
 	}
 }
