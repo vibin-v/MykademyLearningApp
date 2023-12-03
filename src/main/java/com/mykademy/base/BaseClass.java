@@ -7,6 +7,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import com.mykademy.Factory.BrowserFactory;
+import com.mykademy.dataProvider.ConfigReader;
 
 public class BaseClass
 {
@@ -18,7 +19,7 @@ public class BaseClass
 		
 		Reporter.log("LOG:INFO: Running Before class - Setting up browser ", true);
 		
-		driver = BrowserFactory.getBrowser("Chrome","https://v2ru.mykademy.com/");
+		driver = BrowserFactory.getBrowser(ConfigReader.getProperty("browserName"),ConfigReader.getProperty("appUrl"));
 		
 		
 	}

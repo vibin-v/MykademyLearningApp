@@ -1,5 +1,6 @@
 package com.mykademy.Factory;
 
+import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
@@ -9,10 +10,12 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 
+import com.mykademy.dataProvider.ConfigReader;
+
 public class BrowserFactory 
 {
 	
-	public static WebDriver getBrowser(String browserName,String browUrl)
+	public static WebDriver getBrowser(String browserName,String appUrl)
 	{
 		WebDriver driver = null;
 		
@@ -34,11 +37,11 @@ public class BrowserFactory
 		
 		driver.manage().window().maximize();
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
-		driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(ConfigReader.getProperty("implicitlyWaitTime"))));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Long.parseLong(ConfigReader.getProperty("pageLoadTimeoutTime"))));
+		driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(Long.parseLong(ConfigReader.getProperty("scriptTimeoutTime"))));
 		
-		driver.get(browUrl);
+		driver.get(appUrl);
 		
 		
 		return driver;
