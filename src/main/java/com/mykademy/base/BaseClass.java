@@ -6,6 +6,8 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import com.mykademy.Factory.BrowserFactory;
+
 public class BaseClass
 {
 	public WebDriver driver;
@@ -14,10 +16,10 @@ public class BaseClass
 	public void setUp()
 	{
 		
-		driver = new ChromeDriver();
 		Reporter.log("LOG:INFO: Running Before class - Setting up browser ", true);
-		driver.manage().window().maximize();
-		driver.get("https://v2ru.mykademy.com/");
+		
+		driver = BrowserFactory.getBrowser("Chrome","https://v2ru.mykademy.com/");
+		
 		
 	}
 	
@@ -26,6 +28,6 @@ public class BaseClass
 		public void tearDown()
 		{
 			Reporter.log("LOG:INFO: Running After class - Closing up browser ", true);
-			driver.quit();
+			BrowserFactory.closeBrowser(driver);
 		}
 }
