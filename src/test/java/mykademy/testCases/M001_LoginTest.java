@@ -6,23 +6,25 @@ import org.openqa.selenium.By;
 
 import org.testng.Assert;
 import org.testng.Reporter;
-
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.mykademy.Pages.AdminDashbaordPage;
 import com.mykademy.Pages.LoginPage;
 import com.mykademy.base.BaseClass;
+import com.mykademy.dataProvider.ExcelReader;
 
 public class M001_LoginTest extends BaseClass
 {
 	
 	
 	//Testcases
-	@Test
-	public void loginTest() throws InterruptedException
+	@Test(dataProvider = "TestData")
+	public void loginTest(String uname,String uPass) throws InterruptedException
 	{
 		Reporter.log("LOG:INFO : Starting test execution!!",true);
 		
+		Thread.sleep(8000);
 		driver.findElement(By.xpath("//a[text()='SIGN IN']")).click();
 		
 //		
@@ -34,7 +36,7 @@ public class M001_LoginTest extends BaseClass
 //		
 //		
 		LoginPage login = new LoginPage(driver);
-		AdminDashbaordPage admPage = login.loginToApp("sumi.scaria@mykademy.com", "Password@123");
+		AdminDashbaordPage admPage = login.loginToApp(uname,uPass);
 		
 		
 		Thread.sleep(3000);
@@ -48,6 +50,13 @@ public class M001_LoginTest extends BaseClass
 		Assert.assertTrue(driver.findElement(By.xpath("//a[text()='SIGN UP']")).isDisplayed());
 	}
 	
+	@DataProvider(name = "TestData")
+	public Object [][] getData()
+	{
+		Object[][]arr=ExcelReader.getDataFromExcel("LoginData");
+		
+		return arr;
+	}
 	
 	
 }
