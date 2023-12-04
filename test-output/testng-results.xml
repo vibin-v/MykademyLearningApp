@@ -14,19 +14,19 @@
       <![CDATA[LOG:INFO: Running After class - Closing up browser ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-12-04T12:27:16 IST" name="Suite" finished-at="2023-12-04T12:28:25 IST" duration-ms="69283">
+  <suite started-at="2023-12-04T13:10:46 IST" name="Suite" finished-at="2023-12-04T13:12:03 IST" duration-ms="77408">
     <groups>
     </groups>
-    <test started-at="2023-12-04T12:27:16 IST" name="Test" finished-at="2023-12-04T12:28:25 IST" duration-ms="69283">
+    <test started-at="2023-12-04T13:10:46 IST" name="Test" finished-at="2023-12-04T13:12:03 IST" duration-ms="77408">
       <class name="mykademy.testCases.M001_LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:mykademy.testCases.M001_LoginTest@676cf48]" started-at="2023-12-04T12:27:16 IST" name="setUp" finished-at="2023-12-04T12:27:21 IST" duration-ms="5606" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:mykademy.testCases.M001_LoginTest@676cf48]" started-at="2023-12-04T13:10:46 IST" name="setUp" finished-at="2023-12-04T13:10:51 IST" duration-ms="5659" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[LOG:INFO: Running Before class - Setting up browser ]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:mykademy.testCases.M001_LoginTest@676cf48]" started-at="2023-12-04T12:27:22 IST" name="loginTest" data-provider="TestData" finished-at="2023-12-04T12:27:54 IST" duration-ms="32479" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:mykademy.testCases.M001_LoginTest@676cf48]" started-at="2023-12-04T13:10:52 IST" name="loginTest" data-provider="TestData" finished-at="2023-12-04T13:11:26 IST" duration-ms="34131" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,7 +45,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:mykademy.testCases.M001_LoginTest@676cf48]" started-at="2023-12-04T12:27:55 IST" name="loginTest" data-provider="TestData" finished-at="2023-12-04T12:28:25 IST" duration-ms="30059" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:mykademy.testCases.M001_LoginTest@676cf48]" started-at="2023-12-04T13:11:26 IST" name="loginTest" data-provider="TestData" finished-at="2023-12-04T13:12:03 IST" duration-ms="36503" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,7 +64,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:mykademy.testCases.M001_LoginTest@676cf48]" started-at="2023-12-04T12:28:25 IST" name="tearDown" finished-at="2023-12-04T12:28:25 IST" duration-ms="252" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mykademy.testCases.M001_LoginTest@676cf48]" started-at="2023-12-04T13:12:03 IST" name="tearDown" finished-at="2023-12-04T13:12:03 IST" duration-ms="268" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[LOG:INFO: Running After class - Closing up browser ]]>
