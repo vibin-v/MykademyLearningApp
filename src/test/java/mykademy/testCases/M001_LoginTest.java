@@ -40,14 +40,14 @@ public class M001_LoginTest extends BaseClass
 		AdminDashbaordPage admPage = login.loginToApp(uname,uPass);
 		
 		
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		
 		Assert.assertTrue(admPage.isDBdisplayed());
 		
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		
 		admPage.logoutFrmApp();
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		
 		HomePage home = new HomePage(driver);
 		home.isSignupDisplayed();

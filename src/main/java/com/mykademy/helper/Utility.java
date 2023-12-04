@@ -3,6 +3,7 @@ package com.mykademy.helper;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -38,6 +39,16 @@ public class Utility
 		String newFormat=myformat.format(new Date());
 		
 		return newFormat;
+	}
+	
+	public static String getRandomnumber()
+	{
+		
+        Random random = new Random();
+        int random4DigitNumber = 100 + random.nextInt(900);
+        System.out.println("Random 4-digit number: " + random4DigitNumber);
+        String randomString = String.valueOf(random4DigitNumber);
+        return randomString;
 	}
 	
 	

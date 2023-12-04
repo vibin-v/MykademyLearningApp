@@ -18,6 +18,7 @@ public class AdminDashbaordPage
 	private By dashBoardText = By.xpath("//span[text()='Dashboard']");
 	private By userProfile = By.xpath("//a[@class='user-profile']");
 	private By logoutBtn = By.id("mykademyLogoutButton");
+	private By linkToCourse = By.xpath("//div[@class='institution-block']/a");
 	
 	public boolean isDBdisplayed()
 	{
@@ -35,5 +36,10 @@ public class AdminDashbaordPage
 		//driver.findElement(userProfile).click();
 		//Thread.sleep(2000);
 		//driver.findElement(logoutBtn).click();;
+	}
+	
+	public void navigateToCourseCreationModule() 
+	{
+		Utility.waitForWebElement(driver, linkToCourse).click();
 	}
 }

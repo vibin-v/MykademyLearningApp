@@ -7,7 +7,6 @@
 	</listeners>
   <test name="Test">
     <classes>
-		<class name="mykademy.testCases.M001_LoginTest"/>
      	<class name="mykademy.testCases.M002_VerifyCourseCreation"/>
     </classes>
   </test>
