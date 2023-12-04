@@ -5,6 +5,9 @@
       <![CDATA[LOG:INFO: Running Before class - Setting up browser ]]>
     </line>
     <line>
+      <![CDATA[LOG:INFO - Running Test In Headless Mode]]>
+    </line>
+    <line>
       <![CDATA[LOG:INFO : Starting test execution!!]]>
     </line>
     <line>
@@ -14,19 +17,22 @@
       <![CDATA[LOG:INFO: Running After class - Closing up browser ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-12-04T08:50:06 IST" name="Default suite" finished-at="2023-12-04T08:51:23 IST" duration-ms="76913">
+  <suite started-at="2023-12-04T09:54:36 IST" name="Default suite" finished-at="2023-12-04T09:56:05 IST" duration-ms="89083">
     <groups>
     </groups>
-    <test started-at="2023-12-04T08:50:06 IST" name="Default test" finished-at="2023-12-04T08:51:23 IST" duration-ms="76913">
+    <test started-at="2023-12-04T09:54:36 IST" name="Default test" finished-at="2023-12-04T09:56:05 IST" duration-ms="89083">
       <class name="mykademy.testCases.M001_LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:mykademy.testCases.M001_LoginTest@8f2ef19]" started-at="2023-12-04T08:50:06 IST" name="setUp" finished-at="2023-12-04T08:50:13 IST" duration-ms="6903" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:mykademy.testCases.M001_LoginTest@8f2ef19]" started-at="2023-12-04T09:54:36 IST" name="setUp" finished-at="2023-12-04T09:54:43 IST" duration-ms="6579" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[LOG:INFO: Running Before class - Setting up browser ]]>
             </line>
+            <line>
+              <![CDATA[LOG:INFO - Running Test In Headless Mode]]>
+            </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:mykademy.testCases.M001_LoginTest@8f2ef19]" started-at="2023-12-04T08:50:14 IST" name="loginTest" data-provider="TestData" finished-at="2023-12-04T08:50:50 IST" duration-ms="36425" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:mykademy.testCases.M001_LoginTest@8f2ef19]" started-at="2023-12-04T09:54:44 IST" name="loginTest" data-provider="TestData" finished-at="2023-12-04T09:55:33 IST" duration-ms="49206" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,7 +51,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:mykademy.testCases.M001_LoginTest@8f2ef19]" started-at="2023-12-04T08:50:50 IST" name="loginTest" data-provider="TestData" finished-at="2023-12-04T08:51:23 IST" duration-ms="32283" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:mykademy.testCases.M001_LoginTest@8f2ef19]" started-at="2023-12-04T09:55:33 IST" name="loginTest" data-provider="TestData" finished-at="2023-12-04T09:56:05 IST" duration-ms="32349" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,7 +70,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:mykademy.testCases.M001_LoginTest@8f2ef19]" started-at="2023-12-04T08:51:23 IST" name="tearDown" finished-at="2023-12-04T08:51:23 IST" duration-ms="270" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mykademy.testCases.M001_LoginTest@8f2ef19]" started-at="2023-12-04T09:56:05 IST" name="tearDown" finished-at="2023-12-04T09:56:05 IST" duration-ms="193" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[LOG:INFO: Running After class - Closing up browser ]]>

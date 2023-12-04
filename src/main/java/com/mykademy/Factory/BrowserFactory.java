@@ -5,6 +5,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.devtools.v115.log.model.ViolationSetting.Name;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,7 +22,16 @@ public class BrowserFactory
 		
 		if(browserName.equalsIgnoreCase("Chrome") || browserName.equalsIgnoreCase("CH"))
 		{
-			driver = new ChromeDriver();
+			ChromeOptions options=new ChromeOptions();
+			
+			if (ConfigReader.getProperty("headless").equalsIgnoreCase("true")) 
+			{
+				options.addArguments("--headless=new");
+				
+				Reporter.log("LOG:INFO - Running Test In Headless Mode",true);
+
+			}
+			driver = new ChromeDriver(options);
 		}
 		else if (browserName.equalsIgnoreCase("Firefox") || browserName.equalsIgnoreCase("FF"))
 		{
