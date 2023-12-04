@@ -10,8 +10,10 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.mykademy.Pages.AdminDashbaordPage;
+import com.mykademy.Pages.HomePage;
 import com.mykademy.Pages.LoginPage;
 import com.mykademy.base.BaseClass;
+import com.mykademy.dataProvider.DataProviders;
 import com.mykademy.dataProvider.ExcelReader;
 
 public class M001_LoginTest extends BaseClass
@@ -19,7 +21,7 @@ public class M001_LoginTest extends BaseClass
 	
 	
 	//Testcases
-	@Test(dataProvider = "TestData")
+	@Test(dataProvider = "TestData",dataProviderClass = DataProviders.class)
 	public void loginTest(String uname,String uPass) throws InterruptedException
 	{
 		Reporter.log("LOG:INFO : Starting test execution!!",true);
@@ -47,16 +49,15 @@ public class M001_LoginTest extends BaseClass
 		
 		admPage.logoutFrmApp();
 		Thread.sleep(5000);
-		Assert.assertTrue(driver.findElement(By.xpath("//a[text()='SIGN UP']")).isDisplayed());
+		
+		HomePage home = new HomePage(driver);
+		home.isSignupDisplayed();
+		
+		Assert.assertTrue(home.isSignupDisplayed());
+		//Assert.assertTrue(driver.findElement(By.xpath("//a[text()='SIGN UP']")).isDisplayed());
 	}
 	
-	@DataProvider(name = "TestData")
-	public Object [][] getData()
-	{
-		Object[][]arr=ExcelReader.getDataFromExcel("LoginData");
-		
-		return arr;
-	}
+
 	
 	
 }
