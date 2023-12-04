@@ -3,6 +3,8 @@ package com.mykademy.Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.mykademy.helper.Utility;
+
 
 public class AdminDashbaordPage
 {
@@ -19,16 +21,19 @@ public class AdminDashbaordPage
 	
 	public boolean isDBdisplayed()
 	{
-		boolean dbStatus =driver.findElement(dashBoardText).isDisplayed();
-		System.out.println("DB Status is :"+dbStatus);
+		boolean dbStatus = Utility.waitForWebElement(driver, dashBoardText).isDisplayed();
 		return dbStatus;
+		//boolean dbStatus =driver.findElement(dashBoardText).isDisplayed();
+		//System.out.println("DB Status is :"+dbStatus);
 		
 	}
 	
-	public void logoutFrmApp() throws InterruptedException
+	public void logoutFrmApp()
 	{
-		driver.findElement(userProfile).click();
-		Thread.sleep(2000);
-		driver.findElement(logoutBtn).click();;
+		Utility.waitForWebElement(driver, userProfile).click();
+		Utility.waitForWebElement(driver, logoutBtn).click();
+		//driver.findElement(userProfile).click();
+		//Thread.sleep(2000);
+		//driver.findElement(logoutBtn).click();;
 	}
 }

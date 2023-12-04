@@ -15,10 +15,17 @@ import com.mykademy.dataProvider.ConfigReader;
 
 public class BrowserFactory 
 {
+	public static WebDriver driver;
+	
+	public static WebDriver getDriver()
+	{
+		
+		return driver;
+	}
 	
 	public static WebDriver getBrowser(String browserName,String appUrl)
 	{
-		WebDriver driver = null;
+		
 		
 		if(browserName.equalsIgnoreCase("Chrome") || browserName.equalsIgnoreCase("CH"))
 		{

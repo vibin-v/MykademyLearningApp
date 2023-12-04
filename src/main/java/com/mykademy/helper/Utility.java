@@ -1,9 +1,13 @@
 package com.mykademy.helper;
 
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -15,6 +19,29 @@ import com.mykademy.dataProvider.ConfigReader;
 
 public class Utility 
 {
+	
+	public static String captureScreenshotAsByte(WebDriver driver) 
+	{
+		
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		
+		String screenshotasBase64=ts.getScreenshotAs(OutputType.BASE64);
+		
+		return screenshotasBase64;
+	}
+	
+	
+	public static String getCurrentDate()
+	{
+		SimpleDateFormat myformat=new SimpleDateFormat("HH_mm_ss_dd_MM_yyyy");
+		
+		String newFormat=myformat.format(new Date());
+		
+		return newFormat;
+	}
+	
+	
+	
 	
 	public static WebElement highlightWebElement(WebDriver driver,WebElement ele)
 	{	
