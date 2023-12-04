@@ -26,7 +26,6 @@ public class M001_LoginTest extends BaseClass
 	{
 		Reporter.log("LOG:INFO : Starting test execution!!",true);
 		
-		Thread.sleep(8000);
 		driver.findElement(By.xpath("//a[text()='SIGN IN']")).click();
 		
 //		
