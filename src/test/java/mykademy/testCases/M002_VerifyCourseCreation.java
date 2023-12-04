@@ -40,6 +40,7 @@ public class M002_VerifyCourseCreation extends BaseClass
 		
 		Assert.assertTrue(cozSettings.isCourseviewDisplayed());
 		
+		cozSettings.addCourseDetails();
 		
 	}
 }

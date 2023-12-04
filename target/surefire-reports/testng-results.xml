@@ -8,25 +8,31 @@
       <![CDATA[LOG:INFO : Starting test execution!!]]>
     </line>
     <line>
-      <![CDATA[LOG:INFO : Starting test execution!!]]>
+      <![CDATA[LOG:INFO: Running After class - Closing up browser ]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO: Running Before class - Setting up browser ]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO : Starting M002_VerifyCourseCreation Test execution!!]]>
     </line>
     <line>
       <![CDATA[LOG:INFO: Running After class - Closing up browser ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-12-04T13:16:25 IST" name="Suite" finished-at="2023-12-04T13:17:36 IST" duration-ms="71134">
+  <suite started-at="2023-12-04T17:52:04 IST" name="Suite" finished-at="2023-12-04T17:53:34 IST" duration-ms="89999">
     <groups>
     </groups>
-    <test started-at="2023-12-04T13:16:25 IST" name="Test" finished-at="2023-12-04T13:17:36 IST" duration-ms="71134">
+    <test started-at="2023-12-04T17:52:04 IST" name="Test" finished-at="2023-12-04T17:53:34 IST" duration-ms="89999">
       <class name="mykademy.testCases.M001_LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:mykademy.testCases.M001_LoginTest@545b995e]" started-at="2023-12-04T13:16:25 IST" name="setUp" finished-at="2023-12-04T13:16:30 IST" duration-ms="5755" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:mykademy.testCases.M001_LoginTest@524f3b3a]" started-at="2023-12-04T17:52:04 IST" name="setUp" finished-at="2023-12-04T17:52:10 IST" duration-ms="5741" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[LOG:INFO: Running Before class - Setting up browser ]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:mykademy.testCases.M001_LoginTest@545b995e]" started-at="2023-12-04T13:16:31 IST" name="loginTest" data-provider="TestData" finished-at="2023-12-04T13:17:06 IST" duration-ms="34995" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:mykademy.testCases.M001_LoginTest@524f3b3a]" started-at="2023-12-04T17:52:11 IST" name="loginTest" data-provider="TestData" finished-at="2023-12-04T17:52:33 IST" duration-ms="22618" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,26 +51,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:mykademy.testCases.M001_LoginTest@545b995e]" started-at="2023-12-04T13:17:06 IST" name="loginTest" data-provider="TestData" finished-at="2023-12-04T13:17:35 IST" duration-ms="29261" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sumi.scaria@mykademy.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Password@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[LOG:INFO : Starting test execution!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:mykademy.testCases.M001_LoginTest@545b995e]" started-at="2023-12-04T13:17:36 IST" name="tearDown" finished-at="2023-12-04T13:17:36 IST" duration-ms="237" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mykademy.testCases.M001_LoginTest@524f3b3a]" started-at="2023-12-04T17:52:34 IST" name="tearDown" finished-at="2023-12-04T17:52:34 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[LOG:INFO: Running After class - Closing up browser ]]>
@@ -72,6 +59,41 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- mykademy.testCases.M001_LoginTest -->
+      <class name="mykademy.testCases.M002_VerifyCourseCreation">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:mykademy.testCases.M002_VerifyCourseCreation@7331196b]" started-at="2023-12-04T17:52:34 IST" name="setUp" finished-at="2023-12-04T17:52:43 IST" duration-ms="9405" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[LOG:INFO: Running Before class - Setting up browser ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="courseCreationTest(java.lang.String,java.lang.String)[pri:0, instance:mykademy.testCases.M002_VerifyCourseCreation@7331196b]" started-at="2023-12-04T17:52:43 IST" name="courseCreationTest" data-provider="TestData" finished-at="2023-12-04T17:53:34 IST" duration-ms="50972" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sumi.scaria@mykademy.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[LOG:INFO : Starting M002_VerifyCourseCreation Test execution!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- courseCreationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mykademy.testCases.M002_VerifyCourseCreation@7331196b]" started-at="2023-12-04T17:53:34 IST" name="tearDown" finished-at="2023-12-04T17:53:34 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[LOG:INFO: Running After class - Closing up browser ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mykademy.testCases.M002_VerifyCourseCreation -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -1,11 +1,14 @@
 com\mykademy\dataProvider\DataProviders.class
 com\mykademy\helper\Utility.class
-com\mykademy\Pages\HomePage.class
 com\mykademy\base\BaseClass.class
 com\mykademy\dataProvider\ExcelReader.class
-com\mykademy\Listeners\ExtentManager.class
 com\mykademy\Pages\LoginPage.class
+com\mykademy\Listeners\ExtentReportListener.class
+com\mykademy\Pages\SignupPage.class
+com\mykademy\Pages\HomePage.class
+com\mykademy\Listeners\ExtentManager.class
 com\mykademy\Factory\BrowserFactory.class
+com\mykademy\Pages\CourseSettingsPage.class
 com\mykademy\Pages\AdminDashbaordPage.class
 com\mykademy\dataProvider\ConfigReader.class
-com\mykademy\Listeners\ExtentReportListener.class
+com\mykademy\Pages\CourseListingPage_Admin.class
